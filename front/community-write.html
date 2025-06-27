@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>커뮤니티 - 연성대학교 스마트 캠퍼스</title>
+  <link rel="stylesheet" href="css/community_write.css">
+</head>
+<body>
+  <!-- 1. 헤더 영역 -->
+  <header class="community-header">
+    <h1>커뮤니티</h1>
+    <nav class="breadcrumb"></nav>
+  </header>
+
+  <main class="write-layout">
+    <!-- 2. 게시글 작성 영역 -->
+    <section class="write-card">
+      <div class="write-title">새 게시글 작성</div>
+      <form id="writePostForm" autocomplete="off">
+        <input
+          type="text"
+          id="postTitle"
+          name="postTitle"
+          class="write-input"
+          placeholder="제목을 입력하세요"
+          required
+          maxlength="40"
+        >
+        <textarea
+          id="postContent"
+          name="postContent"
+          class="write-input"
+          placeholder="내용을 입력하세요"
+          rows="4"
+          required
+          maxlength="500"
+        ></textarea>
+        <div class="write-btn-wrap">
+          <button type="submit" class="write-btn">등록</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <!-- 닫는 태그 누락 방지 -->
+</body>
+</html>

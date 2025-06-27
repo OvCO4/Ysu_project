@@ -1,0 +1,147 @@
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f7f9fc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* 헤더 */
+.community-header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem 0 1rem;
+}
+
+.community-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+  color: #2563eb;
+  letter-spacing: -1px;
+  margin-left: -500px;
+}
+
+.breadcrumb {
+  color: #8b95a1;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* 전체 레이아웃 */
+.community-layout {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* 버튼 */
+.write-btn-wrap {
+  text-align: right;
+  margin-bottom: 1.2rem;
+}
+
+.community-btn {
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 7px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.18s;
+  box-shadow: 0 2px 6px rgba(37,99,235,0.10);
+}
+
+.community-btn:hover {
+  background: #1d4fd7;
+}
+
+/* 게시글 리스트 */
+.community-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* 게시글 카드 */
+.community-post-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 1.2rem 1rem 1rem 1rem;
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2563eb;
+  margin-bottom: 0.7rem;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.01rem;
+  color: #222;
+  letter-spacing: -0.3px;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.post-item {
+  background: #f8fafc;
+  border-radius: 7px;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e5e7eb;
+  transition: background 0.13s;
+}
+
+.post-item:hover {
+  background: #e0e7ef;
+}
+
+.post-item h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+  margin: 0 0 0.3rem 0;
+}
+
+.post-item p {
+  font-size: 0.97rem;
+  color: #444;
+  margin: 0 0 0.18rem 0;
+}
+
+.post-item small {
+  display: block;
+  font-size: 0.85rem;
+  color: #8b95a1;
+  margin-top: 0.3rem;
+}
+
+/* 반응형 */
+@media (max-width: 700px) {
+  .community-header,
+  .community-layout {
+    max-width: 100%;
+    padding: 0.7rem;
+  }
+  .community-header {
+    padding-top: 1.2rem;
+  }
+  .community-post-card {
+    padding: 1rem 0.5rem;
+  }
+}

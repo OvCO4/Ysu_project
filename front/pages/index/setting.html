@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>설정 – 연성대학교 스마트 캠퍼스</title>
+  <!-- Settings 전용 CSS -->
+  <link rel="stylesheet" href="../../css/settings.css" />
+</head>
+<body>
+  <div class="content-header">
+    <div>
+      <h1>설정</h1>
+      <div class="breadcrumb">
+        <span>홈</span>
+        <span>›</span>
+        <span>설정</span>
+      </div>
+    </div>
+  </div>
+    <!-- 2. 알림 받기 ON/OFF -->
+    <div class="setting-item">
+      <label for="notificationToggle">알림 받기</label>
+      <input type="checkbox" id="notificationToggle" />
+    </div>
+
+    <!-- 3. 카테고리별 알림 설정 -->
+    <div class="setting-section-title">카테고리별 알림 설정</div>
+    <div class="setting-item">
+      <label for="notifCategory-공지사항">공지사항</label>
+      <input type="checkbox" id="notifCategory-공지사항" />
+    </div>
+    <div class="setting-item">
+      <label for="notifCategory-커뮤니티">커뮤니티</label>
+      <input type="checkbox" id="notifCategory-커뮤니티" />
+    </div>
+
+    <!-- 저장 / 취소 버튼 -->
+    <div class="action-buttons">
+      <button id="saveSettingsBtn" class="btn save-btn">저장</button>
+      <button id="cancelSettingsBtn" class="btn cancel-btn">취소</button>
+    </div>
+  </div>
+
+  <!-- Settings 전용 JS -->
+  <script src="/server/pages/index/setting.js"></script>
+</body>
+</html>

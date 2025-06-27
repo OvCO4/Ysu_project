@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>강의평가 - 연성대학교 스마트 캠퍼스</title>
+  <link rel="stylesheet" href="css/lecture_eval.css"><!-- 강의평가 전용 CSS (원하면 추가) -->
+</head>
+<body>
+  <header class="lecture-header">
+    <h1>강의평가</h1>
+  </header>
+
+  <main class="lecture-layout">
+    <section class="lecture-card">
+      <div class="lecture-title">강의평가 작성</div>
+      <form id="lectureEvalForm" autocomplete="off">
+        <label for="lectureName" class="lecture-label">강의명</label>
+        <input
+          type="text"
+          id="lectureName"
+          name="lectureName"
+          class="lecture-input"
+          placeholder="강의명을 입력하세요"
+          required
+        >
+
+        <label for="professorName" class="lecture-label">교수명</label>
+        <input
+          type="text"
+          id="professorName"
+          name="professorName"
+          class="lecture-input"
+          placeholder="교수명을 입력하세요"
+          required
+        >
+
+        <label for="lectureRating" class="lecture-label">평점</label>
+        <select id="lectureRating" name="lectureRating" class="lecture-input" required>
+          <option value="">선택하세요</option>
+          <option value="5">5점 (매우 우수)</option>
+          <option value="4">4점 (우수)</option>
+          <option value="3">3점 (보통)</option>
+          <option value="2">2점 (미흡)</option>
+          <option value="1">1점 (매우 미흡)</option>
+        </select>
+
+        <label for="lectureComment" class="lecture-label">한줄평/코멘트</label>
+        <textarea
+          id="lectureComment"
+          name="lectureComment"
+          class="lecture-input"
+          placeholder="자유롭게 평가를 입력하세요"
+          rows="4"
+          maxlength="500"
+          required
+        ></textarea>
+
+        <div class="lecture-btn-wrap">
+          <button type="submit" class="lecture-btn">평가 등록</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
